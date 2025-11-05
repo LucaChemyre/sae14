@@ -1,0 +1,178 @@
+html {
+  background-color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: ivory;
+  margin: auto;
+  padding: 4em;
+  padding-top: 0;
+  max-width: 60em
+}
+
+a {
+  color: #009E4A;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*****  En-tÃªte de page ********/
+.banniere {
+  background-image: url("images/Angry-Birds.jpg");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  padding: 11em;
+}
+
+.banniere:hover {
+  background-position-y: bottom;
+}
+
+.banniere h1 {
+  text-indent: -9999px;
+}
+
+
+
+/*********  Article  ***********/
+
+main section {
+  border: 1px dotted gray;
+  padding: .5em 1.5em;
+  margin: .5em;
+  background-color: white;
+}
+
+main p {
+  text-align: justify;
+}
+
+
+main h3 {
+  font-size: 1.2em;
+  color: #009E4A;
+  margin: 0;
+  padding: 1em 0 1em;
+}
+
+
+/*********  Images  *************/
+
+main figure {
+  width: 20em;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+main figure img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+main figure figcaption p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+main figure {
+  clear: both;
+  float: right;
+}
+
+
+/*************************
+ *  Menu de navigation
+ *************************/
+ 
+ 
+.menu  {
+  max-width: 50em;
+  margin: 1em auto;
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+}
+
+.menu .tem {
+	background: yellow;
+	position: relative;
+}
+
+.menu .tem ul {
+	max-height: 0;
+	overflow: hidden;
+	transition: 0;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.menu .tem:hover ul {
+	max-height: 50em;
+	transition: 1s;
+  font-weight: normal;
+}
+
+.menu a:hover {
+  font-weight: bold;
+}
+
+.menu h3,
+.menu a {
+	display: block;
+	margin: 0;
+	padding: .5em 1.5em;
+	font-size: inherit;
+	background-color: yellow;
+	text-decoration: none;
+	box-sizing: border-box;
+  color: #009E4A;
+  font-weight: normal;
+}
+
+.menu a {
+  background-color: rgb(255, 196, 0);
+}
+
+.menu .tem:hover h3 {
+  font-weight: bold;
+}
+
+/****************
+*     Divers
+****************/
+
+section:nth-child(odd) figure {
+  float: left;
+}
+
+section:nth-child(even) figure {
+  float: right;
+}
+
+#presentation::before {
+  content: url(images/oiseau_marron.png);
+  margin-right: 1em;
+}
+
+#principe::before {
+  content: url(images/oiseau_jaune.png);
+  margin-right: 1em;
+}
+
+#reseaux::before {
+  content: url(images/oiseau_vert.png);
+  margin-right: 1em;
+}
+
+#collecte::before {
+  content: url(images/oiseau_rouge.png);
+  margin-right: 1em;
+}
